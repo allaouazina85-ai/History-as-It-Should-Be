@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخط الزمني للمقاومة والتحرير (1830 - 1962) | التاريخ كما يجب أن يكون</title>
+    <link rel="stylesheet" href="sections-style.css">
+    <!-- الخطوط المعتمدة للمنصة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="site-body">
+
+    <!-- الترويسة الرسمية للخط الزمني -->
+    <header class="section-hero-header">
+        <div class="header-overlay"></div>
+        <div class="header-content-inner">
+            <div class="header-top-nav">
+                <a href="home.html" class="nav-return-btn">
+                    <span class="btn-arrow">➜</span> العودة للرئيسية
+                </a>
+                <span class="header-badge">السجل الزمني الخالد: 1830م – 1962م</span>
+            </div>
+            
+            <div class="header-center-info">
+                <h1 class="portal-main-title">الخط الزمني للمقاومات الشعبية والتحرير</h1>
+                <div class="title-separator">
+                    <span class="sep-line"></span>
+                    <span class="sep-star">★</span>
+                    <span class="sep-line"></span>
+                </div>
+                <p class="portal-subtitle">تسلسل ملحمي لمسار الكفاح الوطني المسلح من الاحتلال إلى فجر الاستقلال</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- منطقة العارض التفاعلي المباشر (16:9) -->
+    <main class="interactive-stage-container">
+        
+        <!-- 1. شاشة العرض العريضة 16:9 -->
+        <section class="main-display-screen">
+            <div class="screen-frame-16-9">
+                <img id="mainViewerImg" src="popular-resistances-cards/resistance-mitidja-ben-zamoum.png" alt="لوحة المقاومة التاريخية" class="viewer-image">
+            </div>
+            <div class="screen-meta-bar">
+                <div class="meta-tag">عرض تفاعلي مباشر (16:9)</div>
+                <h2 id="mainViewerTitle" class="meta-title">مقاومة متيجة وأحواز العاصمة (1830م – 1839م)</h2>
+            </div>
+        </section>
+
+        <!-- 2. شريط المحطات الزمنية التفاعلي -->
+        <section class="selector-carousel-section">
+            <div class="carousel-heading">
+                <span>اختر المحطة الزمنية لعرض بطاقة المقاومة:</span>
+            </div>
+
+            <div class="cards-carousel-track">
+                
+                <!-- 01. مقاومة متيجة (المحددة افتراضياً) -->
+                <button class="selector-tile active" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-mitidja-ben-zamoum.png', 'مقاومة متيجة وأحواز العاصمة (1830م – 1839م)')">
+                    <div class="tile-number">01</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">مقاومة متيجة</strong>
+                        <span class="tile-years">1830 – 1839م</span>
+                    </div>
+                </button>
+
+                <!-- 02. دولة الأمير عبد القادر -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-emir-abdelkader.png', 'مقاومة دولة الأمير عبد القادر (1832م – 1847م)')">
+                    <div class="tile-number">02</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">الأمير عبد القادر</strong>
+                        <span class="tile-years">1832 – 1847م</span>
+                    </div>
+                </button>
+
+                <!-- 03. أحمد باي وحصار قسنطينة -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-ahmed-bey.png', 'مقاومة أحمد باي وحصار قسنطينة (1830م – 1848م)')">
+                    <div class="tile-number">03</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">مقاومة أحمد باي</strong>
+                        <span class="tile-years">1830 – 1848م</span>
+                    </div>
+                </button>
+
+                <!-- 04. مقاومة الزواوة وبجاية -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-bejaia-zouaoua.png', 'مقاومة الزواوة وبجاية (1833م – 1847م)')">
+                    <div class="tile-number">04</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">الزواوة وبجاية</strong>
+                        <span class="tile-years">1833 – 1847م</span>
+                    </div>
+                </button>
+
+                <!-- 05. مقاومة الزعاطشة -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-zaatcha-cheikh-bouziane.png', 'مقاومة واحة الزعاطشة - الشيخ بوزيان (1849م)')">
+                    <div class="tile-number">05</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">واحة الزعاطشة</strong>
+                        <span class="tile-years">1849م</span>
+                    </div>
+                </button>
+
+                <!-- 06. مقاومة الأغواط -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-laghouat-ben-abdallah.png', 'مقاومة الأغواط والجنوب - بن عبد الله (1851م – 1852م)')">
+                    <div class="tile-number">06</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">مقاومة الأغواط</strong>
+                        <span class="tile-years">1851 – 1852م</span>
+                    </div>
+                </button>
+
+                <!-- 07. الناصر بن شهرة -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-nasser-ben-chohra.png', 'مقاومة الناصر بن شهرة - ملثم الصحراء (1851م – 1875م)')">
+                    <div class="tile-number">07</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">الناصر بن شهرة</strong>
+                        <span class="tile-years">1851 – 1875م</span>
+                    </div>
+                </button>
+
+                <!-- 08. الشريف بوبغلة -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-cherif-boubaghla.png', 'مقاومة الشريف بوبغلة - جرجرة والصومام (1851م – 1854م)')">
+                    <div class="tile-number">08</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">الشريف بوبغلة</strong>
+                        <span class="tile-years">1851 – 1854م</span>
+                    </div>
+                </button>
+
+                <!-- 09. لالة فاطمة نسومر -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-fatma-nsoumer.png', 'مقاومة لالة فاطمة نسومر - خنساء جرجرة (1854م – 1857م)')">
+                    <div class="tile-number">09</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">فاطمة نسومر</strong>
+                        <span class="tile-years">1854 – 1857م</span>
+                    </div>
+                </button>
+
+                <!-- 10. أولاد سيدي الشيخ (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">10</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">أولاد سيدي الشيخ</strong>
+                        <span class="tile-years">قريباً (1864م)</span>
+                    </div>
+                </div>
+
+                <!-- 11. سيدي لزرق بلحاج (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">11</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">سيدي لزرق بلحاج</strong>
+                        <span class="tile-years">قريباً (1864م)</span>
+                    </div>
+                </div>
+
+                <!-- 12. ثورة محمد المقراني (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">12</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">محمد المقراني</strong>
+                        <span class="tile-years">قريباً (1871م)</span>
+                    </div>
+                </div>
+
+                <!-- 13. ثورة الشيخ الحداد (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">13</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">الشيخ الحداد</strong>
+                        <span class="tile-years">قريباً (1871م)</span>
+                    </div>
+                </div>
+
+                <!-- 14. ثورة بوعمامة (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">14</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">الشيخ بوعمامة</strong>
+                        <span class="tile-years">قريباً (1881م)</span>
+                    </div>
+                </div>
+
+                <!-- 15. مقاومة التوارق وآمود (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">15</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">مقاومة التوارق</strong>
+                        <span class="tile-years">قريباً (1881م)</span>
+                    </div>
+                </div>
+
+                <!-- 16. انتفاضة عين تريد (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">16</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">عين تريد</strong>
+                        <span class="tile-years">قريباً (1881م)</span>
+                    </div>
+                </div>
+
+                <!-- 17. انتفاضة عين بسام (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">17</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">عين بسام</strong>
+                        <span class="tile-years">قريباً (1906م)</span>
+                    </div>
+                </div>
+
+                <!-- 18. انتفاضة سوق أهراس (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">18</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">سوق أهراس</strong>
+                        <span class="tile-years">قريباً (1913م)</span>
+                    </div>
+                </div>
+
+                <!-- 19. انتفاضة بني شقران (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">19</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">بني شقران</strong>
+                        <span class="tile-years">قريباً (1914م)</span>
+                    </div>
+                </div>
+
+                <!-- 20. ثورة الأوراس 1916 (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">20</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">ثورة الأوراس</strong>
+                        <span class="tile-years">قريباً (1916م)</span>
+                    </div>
+                </div>
+
+                <!-- 21. المنظمة الخاصة OS (شاغرة) -->
+                <div class="selector-tile disabled">
+                    <div class="tile-number">21</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">المنظمة الخاصة</strong>
+                        <span class="tile-years">قريباً (1947م)</span>
+                    </div>
+                </div>
+
+                <!-- 22. ملحمة الثورة التحريرية (جاهزة ومربوطة بملفها المصحح) -->
+                <button class="selector-tile" onclick="switchTimeline(this, 'popular-resistances-cards/resistance-guerre-liberation-1954.png', 'ملحمة الثورة التحريرية المظفرة (1954م – 1962م)')">
+                    <div class="tile-number">22</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">الثورة التحريرية</strong>
+                        <span class="tile-years">1954 – 1962م</span>
+                    </div>
+                </button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- التذييل الرسمي للمنصة -->
+    <footer class="site-official-footer">
+        <div class="footer-inner">
+            <div class="footer-seal-emblem">
+                <span class="emblem-star">★</span>
+                <h3 class="footer-glory">المجد والخلود لشهدائنا الأبرار</h3>
+                <span class="emblem-star">★</span>
+            </div>
+            <p class="footer-copy">المنصة الرقمية الوطنية لتوثيق الذاكرة والتاريخ الجزائري</p>
+            <div class="developer-tag">برمجة وتصميم المنصة &copy; 2026</div>
+        </div>
+    </footer>
+
+    <!-- سكريبت التبديل للخط الزمني -->
+    <script>
+        function switchTimeline(buttonElement, imagePath, titleText) {
+            const allTiles = document.querySelectorAll('.selector-tile');
+            allTiles.forEach(tile => tile.classList.remove('active'));
+
+            buttonElement.classList.add('active');
+
+            const viewerImg = document.getElementById('mainViewerImg');
+            const viewerTitle = document.getElementById('mainViewerTitle');
+
+            viewerImg.style.opacity = '0.2';
+            setTimeout(() => {
+                viewerImg.src = encodeURI(imagePath);
+                viewerTitle.textContent = titleText;
+                viewerImg.style.opacity = '1';
+            }, 150);
+        }
+    </script>
+</body>
+</html>

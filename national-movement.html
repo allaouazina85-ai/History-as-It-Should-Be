@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رواد الفكر والإصلاح والحركة الوطنية | التاريخ كما يجب أن يكون</title>
+    <link rel="stylesheet" href="sections-style.css">
+    <!-- استدعاء الخطوط العربية المعتمدة -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="site-body">
+
+    <!-- الترويسة الرسمية للمحور الثاني -->
+    <header class="section-hero-header">
+        <div class="header-overlay"></div>
+        <div class="header-content-inner">
+            <div class="header-top-nav">
+                <a href="personalities.html" class="nav-return-btn">
+                    <span class="btn-arrow">➜</span> العودة للشخصيات
+                </a>
+                <span class="header-badge">المحور الثاني: رواد الفكر والحركة الوطنية</span>
+            </div>
+            
+            <div class="header-center-info">
+                <h1 class="portal-main-title">رواد الفكر والنهضة والإصلاح</h1>
+                <div class="title-separator">
+                    <span class="sep-line"></span>
+                    <span class="sep-star">★</span>
+                    <span class="sep-line"></span>
+                </div>
+                <p class="portal-subtitle">أعلام الإصلاح والتربية والعمل السياسي وبناة الهوية الوطنية الجزائرية</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- منطقة العارض التفاعلي المباشر (16:9) -->
+    <main class="interactive-stage-container">
+        
+        <!-- 1. شاشة العرض العريضة 16:9 -->
+        <section class="main-display-screen">
+            <div class="screen-frame-16-9">
+                <img id="mainViewerImg" src="thought-leaders-cards/ben-badis.png" alt="لوحة رائد الفكر" class="viewer-image">
+            </div>
+            <div class="screen-meta-bar">
+                <div class="meta-tag">عرض تفاعلي مباشر (16:9)</div>
+                <h2 id="mainViewerTitle" class="meta-title">الإمام عبد الحميد بن باديس (1889م – 1940م)</h2>
+            </div>
+        </section>
+
+        <!-- 2. شريط الكروت التفاعلي لاختيار رائد الفكر -->
+        <section class="selector-carousel-section">
+            <div class="carousel-heading">
+                <span>اختر بطاقة الشخصية لعرض لوحتها التوثيقية:</span>
+            </div>
+
+            <div class="cards-carousel-track">
+                
+                <!-- 1. عبد الحميد بن باديس (محدد افتراضياً) -->
+                <button class="selector-tile active" onclick="switchLeader(this, 'thought-leaders-cards/ben-badis.png', 'الإمام عبد الحميد بن باديس (1889م – 1940م)')">
+                    <div class="tile-number">01</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">عبد الحميد بن باديس</strong>
+                        <span class="tile-years">1889 – 1940م</span>
+                    </div>
+                </button>
+
+                <!-- 2. محمد البشير الإبراهيمي -->
+                <button class="selector-tile" onclick="switchLeader(this, 'thought-leaders-cards/el-ibrahimi.png', 'الشيخ محمد البشير الإبراهيمي (1889م – 1965م)')">
+                    <div class="tile-number">02</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">البشير الإبراهيمي</strong>
+                        <span class="tile-years">1889 – 1965م</span>
+                    </div>
+                </button>
+
+                <!-- 3. مصالي الحاج -->
+                <button class="selector-tile" onclick="switchLeader(this, 'thought-leaders-cards/messali-hadj.png', 'مصالي الحاج - أبو الحركة الوطنية (1898م – 1974م)')">
+                    <div class="tile-number">03</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">مصالي الحاج</strong>
+                        <span class="tile-years">1898 – 1974م</span>
+                    </div>
+                </button>
+
+                <!-- 4. الفضيل الورتيلاني -->
+                <button class="selector-tile" onclick="switchLeader(this, 'thought-leaders-cards/fodil-ouartilani.png', 'الشيخ الفضيل الورتيلاني (1900م – 1959م)')">
+                    <div class="tile-number">04</div>
+                    <div class="tile-info">
+                        <strong class="tile-title">الفضيل الورتيلاني</strong>
+                        <span class="tile-years">1900 – 1959م</span>
+                    </div>
+                </button>
+
+                <!-- الخانات الشاغرة (قيد التجهيز) -->
+                <div class="selector-tile disabled"><div class="tile-number">05</div><div class="tile-info"><strong class="tile-title">مبارك الميلي</strong><span class="tile-years">قريباً</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">06</div><div class="tile-info"><strong class="tile-title">الطيب العقبي</strong><span class="tile-years">قريباً</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">07</div><div class="tile-info"><strong class="tile-title">العربي التبسي</strong><span class="tile-years">قريباً</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">08</div><div class="tile-info"><strong class="tile-title">إبراهيم أبو اليقظان</strong><span class="tile-years">قريباً</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">09</div><div class="tile-info"><strong class="tile-title">عبد اللطيف سلطاني</strong><span class="tile-years">قريباً</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">10</div><div class="tile-info"><strong class="tile-title">أحمد توفيق المدني</strong><span class="tile-years">قريباً</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">11</div><div class="tile-info"><strong class="tile-title">الأمير خالد</strong><span class="tile-years">قريباً</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">12</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">13</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">14</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">15</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">16</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">17</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">18</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">19</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+                <div class="selector-tile disabled"><div class="tile-number">20</div><div class="tile-info"><strong class="tile-title">قريباً</strong><span class="tile-years">رائد فكر</span></div></div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- التذييل الرسمي للمنصة -->
+    <footer class="site-official-footer">
+        <div class="footer-inner">
+            <div class="footer-seal-emblem">
+                <span class="emblem-star">★</span>
+                <h3 class="footer-glory">المجد والخلود لشهدائنا الأبرار</h3>
+                <span class="emblem-star">★</span>
+            </div>
+            <p class="footer-copy">المنصة الرقمية الوطنية لتوثيق الذاكرة والتاريخ الجزائري</p>
+            <div class="developer-tag">برمجة وتصميم المنصة &copy; 2026</div>
+        </div>
+    </footer>
+
+    <!-- سكريبت التبديل الفوري والانسيابي للوحات -->
+    <script>
+        function switchLeader(buttonElement, imagePath, titleText) {
+            // إزالة التنشيط عن بقية الأزرار
+            const allTiles = document.querySelectorAll('.selector-tile');
+            allTiles.forEach(tile => tile.classList.remove('active'));
+
+            // تنشيط الزر المختار
+            buttonElement.classList.add('active');
+
+            // تبديل الصورة والعنوان بسلاسة
+            const viewerImg = document.getElementById('mainViewerImg');
+            const viewerTitle = document.getElementById('mainViewerTitle');
+
+            viewerImg.style.opacity = '0.2';
+            setTimeout(() => {
+                viewerImg.src = encodeURI(imagePath);
+                viewerTitle.textContent = titleText;
+                viewerImg.style.opacity = '1';
+            }, 150);
+        }
+    </script>
+</body>
+</html>
